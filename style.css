@@ -1,0 +1,79 @@
+body {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    font-family: Verdana;
+    padding: 2vh 1.5vw 2vh 1.5vw;
+    margin-bottom: 5vh;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > p {
+    font-family: Century Gothic, Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.main > div {
+    display: block;
+    background-color: rgb(255, 255, 200);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 2vw;
+}
+
+/* List board edit */
+.list-board {
+    display: block;
+    width: 75%;
+}
+
+.list-board > hr {
+    color: black
+}
+
+.list-board > span {
+    font-weight: 700;
+}
+
+.list-board > input {
+    background-color: inherit;
+    border: none;
+    width: 100%;
+}
+
+.list-board > input:focus {
+    background-color: inherit;
+    border: none;
+    width: 100%;
+    outline-style: none;
+}
+
+/*The logo */
+.text-banner {
+    font-size: 4vh;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.text-banner span {
+    color: coral;
+}
+
+/* Resizing for when its in desktop mode 
+@media only screen and (min-width: 768px) {
+    .text-banner {
+        font-size: 5vh;
+    }    
+}
