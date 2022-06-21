@@ -5,13 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"></link>
+    <script src="https://kit.fontawesome.com/f71a44a4e4.js"crossorigin="anonymous"></script>
+    <!--    FOR OFFLINE TESTING
+        <link rel="stylesheet" href="fontawesome/css/all.css"></link>
+    -->
     <title>Home | Calendr</title>
 </head>
 <body>
+    <!--
+        FOR MOBILE
     <nav>
         <div class="text-banner">Calend<span>r</span></div>
     </nav>
-    <div class="main">
+    -->
+    <nav>
+        <div class="nav-items">
+            <div class="top-items">
+                <span class="username">JB</span>
+                <i class="fa-lg fas gray fa-home"></i>
+                <i class="fa-lg fas gray fa-clock"></i>
+                <i class="fa-lg fas gray fa-calendar"></i>
+                <i class="fa-lg fas gray fa-bell"></i>
+            </div>
+            <div class="end-items">
+                <i class="fa-lg fas gray fa-cog align-end"></i>
+                <i class="fa-lg fas gray fa-question-circle"></i>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="dashboard">
+            <span class="flex-aligned">
+                <h2><i class="fas gray fa-bars"></i> Today </h2>
+                <i class="fas gray fa-plus float-end"> </i>
+            </span>
+            <span class="task flex-aligned">
+                <i class="far fa-lg gray fa-square"></i>
+                <textarea rows="1" type="text" name="item" id="1" placeholder="Add a task here" aria-placeholder="Add a Task to today here"></textarea>
+            </span>
+            <div class="hr"></div>
+            <span class="flex-aligned">
+                <h3>My To Do!</h3>
+                <h3 class="float-end">Due date</h3>
+            </span>
+            <span class="sub-task flex-aligned">
+                <i class="far fa-lg lightgray fa-square"></i>
+                <textarea rows="1" type="text" name="item" id="1" placeholder="Add a sub-task here" aria-placeholder="Add a sub-task here"></textarea>
+                <small class="float-end">Yesterday</small>
+            </span>
+            <div class="hr"></div>
+        </section>
+        <section class="details">
+            <h2><i class="fas gray fa-chart-bar"></i> Details</h2>
+            <div>
+                <i class="fas lightgray fa-6x fa-calendar-day"></i>
+                <small>click here to view details</small>
+            </div>
+        </section>
+    </main>
+    <!--
+        NOTE FEATURE
+    <div class="note">
         <p>Good morning, let's plan our day!</p>
         <div class="list-board">
             <span>To-do List</span>
@@ -30,5 +84,6 @@
             <hr>
         </div>
     </div>
+    -->
 </body>
 </html>

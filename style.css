@@ -2,17 +2,79 @@ body {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
+.hr {
+    margin: 1rem 0rem;
+    border-bottom: 1px solid gainsboro;
+    height: 1px;
+}
+
+nav .text-banner {
     font-family: Verdana;
     padding: 2vh 1.5vw 2vh 1.5vw;
     margin-bottom: 5vh;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
-.main {
+.username {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(145, 2, 211);
+    border-radius: 20%;
+    padding: 0.5rem;
+}
+
+nav .nav-items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    width: 5rem;
+    height: 100%;
+    background-color: rgb(250, 239, 255);
+}
+
+.nav-items i{
+    margin: 20px 0px;
+}
+
+i {
+    cursor: pointer;
+}
+
+i.gray {
+    color: gray;
+}
+
+i.lightgray {
+    color: gainsboro;
+}
+
+.top-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.end-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+/*
+NOTEPAD STYLE
+.note {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -20,20 +82,19 @@ nav {
     align-items: center;
 }
 
-.main > p {
+.note > p {
     font-family: Century Gothic, Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
 }
 
-.main > div {
+.note > div {
     display: block;
     background-color: rgb(255, 255, 200);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 2vw;
 }
 
-/* List board edit */
 .list-board {
     display: block;
     width: 75%;
@@ -60,7 +121,7 @@ nav {
     outline-style: none;
 }
 
-/*The logo */
+THE LOGO 
 .text-banner {
     font-size: 4vh;
     font-weight: 900;
@@ -71,9 +132,74 @@ nav {
     color: coral;
 }
 
-/* Resizing for when its in desktop mode 
+RESIZING LOGO FOR DESKTOP
 @media only screen and (min-width: 768px) {
     .text-banner {
         font-size: 5vh;
     }    
+}
+*/
+
+main {
+    margin-left: 5rem;
+    padding: 1.5rem;
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard {
+    width: 50%;
+    padding-right: 2%;
+}
+
+.details {
+    border-left: 1px solid rgb(240, 240, 240);
+    width: 50%;
+    padding-left: 2%;
+}
+
+.float-end {
+    float: right;
+}
+
+.flex-aligned {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+textarea:focus {
+    outline-color: rgb(250, 239, 255);
+}
+
+.task textarea {
+    width: 80%;
+    padding: 0.7rem;
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.sub-task {
+    margin-left: 1rem;
+}
+
+.sub-task textarea {
+    width: 80%;
+    padding: 0.35rem;
+    margin-left: 0.7rem;
+    font-size: 0.9rem;
+    background-color: none;;
+    color: grey;
+    border: none;
+}
+
+.details > div {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-evenly;
 }
