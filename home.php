@@ -1,3 +1,6 @@
+<?php
+    require_once "./signup.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +26,9 @@
         <nav class="col-md-1">
             <div class="d-md-flex flex-column h-100 justify-content-between align-items-center bg-light">
                 <div class="d-md-flex flex-column align-items-center">
-                    <div class="mt-md-5 text-center text-white fw-bolder bg-info rounded-pill p-2">JT   </div>
+                    <button id="signup" type="button" class = "d-none" data-bs-toggle = "modal" data-bs-target = "#myModal1"> View image </button>
+                    <!-- label trigggers button to trigger modal -->
+                    <div class="mt-md-5 text-center text-white fw-bolder bg-info rounded-pill p-2"><label for="signup">JT</label></div>
                     <i class="mt-md-5 fa-lg fas fa-home"></i>
                     <i class="mt-md-5 fa-lg fas fa-clock"></i>
                     <i class="mt-md-5 fa-lg fas fa-calendar"></i>
@@ -35,9 +40,9 @@
                 </div>
             </div>
         </nav>
-        <main class="col-md-11">
+        <main class="col-md-9"><!-- col-md-9 because of margin errors -->
             <div class="row h-100">
-                <section class="dashboard col-6 d-flex flex-column justify-content-center">
+                <section class="col-md-6 d-flex flex-column justify-content-center">
                     <table class="table bg-light border-light rounded-3 text-center">
                         <thead>
                             <th colspan="3" id="calMonth">Month</th>
@@ -92,7 +97,7 @@
                         </tr>
                     </table>
                 </section>
-                <section class="details col-6 d-flex flex-column justify-content-center">
+                <section class="col-6 d-flex flex-column justify-content-center">
                    <!-- 
                         <span class="flex-aligned">
                         <h2><i class="fas gray fa-bars"></i> Today </h2>
